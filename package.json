@@ -5,18 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "format": "prettier --write '*/**/*.{js,ts,tsx,json}'",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run format && npm run lint"
     }
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
   },
   "repository": {
     "type": "git",
@@ -48,6 +43,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "html-webpack-plugin": "^4.4.1",
+    "husky": "^4.3.0",
     "node-sass": "^4.14.1",
     "postcss": "^7.0.32",
     "postcss-focus": "^4.0.0",
