@@ -6,6 +6,12 @@ import { Header, Footer } from '../sections';
 
 import 'styles/app.scss';
 
+const y = (t) => {
+  console.log(t);
+};
+
+console.log(x);
+
 export const App: FunctionComponent = (): ReactElement => (
   <>
     <Header />
