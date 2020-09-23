@@ -37,9 +37,14 @@ jest
 
 prettier
 
-stylelint
-stylelint-config-prettier
+stylelint stylelint-config-prettier
 stylelint-config-rational-order
 stylelint-config-recommended
 stylelint-config-standard
 ts-jest
+
+"stylelint": "^10.1.0",
+"stylelint-config-prettier": "^5.2.0",
+"stylelint-config-rational-order": "^0.1.2",
+"stylelint-config-recommended": "^2.2.0",
+"tsconfig-paths-webpack-plugin": "^3.2.0",
